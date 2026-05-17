@@ -1,0 +1,58 @@
+# E-Commerce Business Analysis — SQL Project
+
+## Overview
+A complete business analysis project built entirely in SQL using
+PostgreSQL. Covers 10 real business queries from basic aggregations
+to advanced window functions and CTEs on a retail orders database.
+
+## Tools Used
+- PostgreSQL 16
+- pgAdmin 4
+
+## Database Structure
+3 tables created from scratch:
+
+customers table — customer_id, customer_name, city, state, segment
+
+products table — product_id, product_name, category, sub_category
+
+orders table — order_id, customer_id, product_id, order_date,
+               quantity, discount, sales, profit, region
+
+## 10 Business Queries Written
+
+| Query | Business Question Answered |
+|---|---|
+| Query 1 | Total sales, profit, orders and profit margin |
+| Query 2 | Sales and profit breakdown by category |
+| Query 3 | Top 5 customers by total revenue |
+| Query 4 | Monthly sales trend over time |
+| Query 5 | Region wise performance comparison |
+| Query 6 | Discount impact on profit using subquery |
+| Query 7 | Running total sales using Window Function |
+| Query 8 | Customer ranking by spend using RANK() |
+| Query 9 | Loss making products using CTE |
+| Query 10 | Customer segment comparison using advanced CTE |
+
+## SQL Concepts Used
+- SELECT with WHERE, ORDER BY, LIMIT
+- JOIN — connecting customers, products and orders tables
+- GROUP BY with aggregate functions SUM, COUNT, AVG
+- Subqueries — inline derived tables
+- CASE WHEN — conditional logic inside queries
+- CTE — Common Table Expressions using WITH clause
+- Window Functions — SUM OVER, RANK with PARTITION BY
+- DISTINCTCOUNT and COUNTROWS
+
+## Key Business Insights
+- Technology category has highest profit margin
+- Products with discount above 25 percent become loss making
+- Corporate segment generates highest revenue per customer
+- Month of December has highest sales across all regions
+
+## How to Run
+1. Install PostgreSQL free from postgresql.org
+2. Open pgAdmin and create a new database called ecommerce_db
+3. Open Query Tool
+4. Copy and paste the ecommerce_analysis.sql file contents
+5. Run each section one by one from top to bottom
